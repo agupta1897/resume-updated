@@ -156,3 +156,18 @@ a:hover, a:focus, a:active {
   margin: 0 auto;
 }
 
+
+.column {
+  float: left;
+  width: 5%;
+  min-width: 80px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
